@@ -1,0 +1,27 @@
+var array = {
+
+    "nombre" : "jose rosario",
+    "edad" : "17 años,"
+
+    "musica":{
+        "musica 1" : "levan polka",
+        "musica 2" : "the spectre",
+        "musica 3" : "moster"
+
+        "genero":{
+            "levan polka" : "key pop",
+            "the spectre" : "electronica",
+            "moster" : "rock metal"
+        }
+    },
+    "peliculas":{
+        "guerra" : "asta el ultimo hombre",
+        "ficcion" : "your name",
+        "accion" : "la guerra del mañan"
+    },
+    "series":{
+        "gore" : "another",
+        "shonen" : "attack on titan",
+        "isekai" : "re zero"
+    }
+}   
