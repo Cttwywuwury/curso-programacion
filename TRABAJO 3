@@ -1,0 +1,86 @@
+function menu(){
+menu();
+    let prompt("que deseas hacer \n 1. usar calculadora basica \n 2. nombrar a tu mascota \n salir");
+
+    switch(opc){
+        case 1:
+            usar();
+            break;
+        case 2:
+            nombrar;
+            break;
+        case 3:
+            salir;
+            break
+    }
+}
+
+function usar(){
+    printf( "\n   >>> MENU CALCULADORA <<<" );
+    printf( "\n   1. Sumar dos nucmeros.", 163 );
+    printf( "\n   2. Restar dos nucmeros.", 163 );
+    printf( "\n   3. Multiplicar dos nucmeros.", 163 );
+    printf( "\n   4. Dividir dos nucmeros.", 163 );
+    printf( "\n   5. Salir." );
+
+    printf("ingrese una opcion")
+    cin >> opcion;
+
+    switch(opcion) {
+        
+        //Opcion Sumar//
+        case '1': printf( "\n   Introduzca primer sumando: " );
+                  scanf( " %d", n1);
+                  printf( "\n   Introduzca segundo sumando: " );
+                  scanf( " %d", n2);
+                  printf( "\n   %d + %d = %d\n", n1, n2, n1 + n2 );
+                  break;
+
+                  //Opción Restar//
+        case '2': printf( "\n   Introduzca minuendo: " );
+                  scanf( " %d", n1);
+                  printf( "\n   Introduzca sustraendo: " );
+                  scanf( " %d", n2);
+                  printf( "\n   %d - %d = %d\n", n1, n2, n1 - n2 );
+                  break;
+
+                  /" Opción Multiplicar "/
+        case '3': printf( "\n   Introduzca primer operando: " );
+                  scanf( " %d", n1);
+                  printf( "\n   Introduzca segundo operando: " );
+                  scanf( " %d", n2);
+                  printf( "\n   %d * %d = %d\n", n1, n2, n1 * n2 );
+                  break;
+
+                  /" Opción 4: División entera "/
+        case '4': printf( "\n   Introduzca dividendo: " );
+                  scanf( " %d", n1);
+                  printf( "\n   Introduzca divisor: " );
+                  scanf( " %d", n2);
+                  if ( n2 != 0 )
+                      printf( "\n   %d div %d = %d ( Resto = %d )\n", n1, n2, n1 / n2, n1 % n2 );
+                  else
+                      printf( "\n   ERROR: No se puede dividir entre cero.\n" );
+    }
+
+} while ( opcion != '5' );
+
+return 0;
+
+function nombrar(){
+    
+    cout << "Menu de Opciones" << endl;
+    cout << "1. nombrar 1" << endl;
+    cout << "2. salir 2" << endl;
+    
+    cout << "Ingrese una opcion: ";
+    cin >> opcion;
+    
+    switch (opcion) {
+        case "1":
+            nombrar();
+        break;
+    }
+} while ( opcion != '5' );
+
+return 0;
